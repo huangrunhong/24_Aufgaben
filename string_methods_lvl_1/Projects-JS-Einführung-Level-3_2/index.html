@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects-JS-Einführung-Level-3_2</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="">Zu trennende Zeichenkette</label>
+      <input type="text" id="stringInput" />
+      <label for="">Woran trennen?</label>
+      <div>
+        <input type="text" id="stringSeparate" />
+        <label
+          ><input type="radio" name="radio" value="before" onclick="before()" />
+          Davor</label
+        >
+        <label
+          ><input type="radio" name="radio" value="after" onclick="after()" />
+          Danach</label
+        >
+      </div>
+      <input type="button" value="Klick mich" onclick="checkResult()" />
+    </form>
+    <p id="stringBefore"></p>
+    <p id="stringAfter"></p>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
